@@ -9,9 +9,17 @@ body {
 .wrapper {
 	width: 100%;
 	height: 700px;
+}
+
+.rw {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+.cl {
+	display: flex;
+	flex-direction: column;
 }
 
 a {
@@ -23,10 +31,13 @@ a:hover {
 	color: blue;
 }
 
-p {
+p, h1 {
 	text-align: center;
 }
 
+.brdr {
+	border: 1px solid black;
+}
 
 /*** index  ***/
 
@@ -43,6 +54,27 @@ p {
 
 /*** belt ***/ 
 
+.top {
+	height: 100px;
+	width: 100%;
+}
+
+.pgname {
+	margin-top: 15px;
+	width: 40%;
+}
+
 .content {
-	margin-top: 150px;
+	margin-top: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 200px;
+}
+
+.title {
+	width: 20%;
+}
+
+.meat {
+	width: 80%;
 }
