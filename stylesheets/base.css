@@ -40,20 +40,19 @@ p, h1 {
 	border-radius: 7.5px;
 }
 
-/*** index  ***/
 
+
+
+/*** index  ***/
 
 .nav {
 	margin-top: 150px;
 }
 
-/*** chat ***/
 
-#contact {
-	margin-top: 150px;
-}
 
-/*** belt + next ***/ 
+
+/*** pages general ***/
 
 .top {
 	height: 120px;
@@ -64,6 +63,21 @@ p, h1 {
 	margin-top: 15px;
 	width: 40%;
 }
+
+
+
+
+/*** chat ***/
+
+#contact {
+	margin-top: 150px;
+}
+
+
+
+
+/*** belt + next ***/ 
+
 
 .content {
 	margin-top: 25px;
