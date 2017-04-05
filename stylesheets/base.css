@@ -83,16 +83,28 @@ p, h1, h2, h3 {
 	margin-top: 25px;
 	margin-left: 5%;
 	margin-right: 5%;
-	height: 250px;
+	height: 275px;
 }
 
 .title {
-	width: 12.5%;
+	width: 25%;
 	margin-right: 2.5%;
 }
 
+.title p {
+	text-align: left;
+}
+
+.title h3 {
+	text-align: center;
+}
+
+.title a {
+	text-decoration: underline;
+}
+
 .meat {
-	width: 85%;
+	width: 72.5%;
 }
 
 /*** about ***/
