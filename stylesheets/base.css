@@ -31,7 +31,7 @@ a:hover {
 	color: blue;
 }
 
-p, h1 {
+p, h1, h2, h3 {
 	text-align: center;
 }
 
@@ -93,4 +93,33 @@ p, h1 {
 
 .meat {
 	width: 85%;
+}
+
+/*** about ***/
+
+.about {
+	width: 90%;
+	height: 500px;
+	margin-left: 5%;
+}
+
+.bigimg {
+	width: 35%;
+	height: 475px;
+}
+
+#portrait {
+	width: 100%;
+	height: 470px;
+}
+
+.bigtext {
+	width: 62.5%;
+	height: 475px;
+	overflow: auto;
+	margin-left: 2.5%;
+}
+
+.bigtext p, h3 {
+	text-align: left;
 }
