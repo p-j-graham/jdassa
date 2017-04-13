@@ -2,23 +2,52 @@
 <head>
 	<title>Josh Dassa | Handiwork</title>
 	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/base.css">
+	<link rel="stylesheet" href="../stylesheets/basetest.css">
 </head>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 
 <body>
 
 	<div class="wrapper">
 
-		<div class="top rw">
-			<div class="pgname">
-				<h1>Handiwork</h1>
-				<p><a href="../index.html">back</a></p>
+		<div class="header">
+			<h1>Handiwork</h1>
+			<div class="dropdown">
+  				<button onclick="myFunction()" class="dropbtn">menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+   					<a href="../index.html">home</a>
+    				<a href="belt.html">copy</a>
+    				<a href="hand.html">writing</a>
+    				<a href="about.html">about</a>
+  				</div>
 			</div>
 		</div>
 
-		<div class="content">
+		<div class="content cent">
 			<p>Not Sure, Yet</p>
-			<p>One More</p> 
+			<p>Digital Dog</p> 
 		</div>
 
 	</div>

@@ -2,17 +2,83 @@
 <head>
 	<title>Josh Dassa | Under my Belt</title>
 	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/base.css">
+	<link rel="stylesheet" href="../stylesheets/basetest.css">
+
+	<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("UFLA");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+var slideIndex = 1;
+shoDiv(slideIndex);
+
+function pluDiv(n) {
+    shoDiv(slideIndex += n);
+}
+
+function shoDiv(n) {
+    var i;
+    var x = document.getElementsByClassName("WBWW");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+	</script>
+
 </head>
 
 <body>
 
-	<div class="wrapper cl">
+	<div class="bwrapper cl">
 
-		<div class="top rw">
-			<div class="pgname">
-				<h1>Under My Belt</h1>
-				<p><a href="../index.html">back</a></p>
+		<div class="header">
+			<h1>Under My Belt</h1>
+			<div class="dropdown">
+  				<button onclick="myFunction()" class="dropbtn">menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+   					<a href="../index.html">home</a>
+    				<a href="belt.html">copy</a>
+    				<a href="hand.html">writing</a>
+    				<a href="about.html">about</a>
+  				</div>
 			</div>
 		</div>
 
@@ -22,8 +88,16 @@
 				<p>Think farmers markets, locally-sourced grocers, and farm box deliveries are the freshest produce options for the modern urbanite? The folks at Urban Farms LA are on a mission to bring local produce even closer to home. With custom garden boxes for your backyard, balcony, or even windowsill, farm-to-table is nearer than you think.</p>
 				<p>Here are a few samples of the copy I wrote for the launch of their new <a href="http://www.urbanfarmsla.com/">website</a>, as well as promotional fliers.
 			</div>
-			<div class="meat brdr">
-				<p> meat </p>
+			<div class="meat">
+				<button class="slidebutton" onclick="plusDivs(-1)">&#10094;</button>
+
+				<img class="UFLA" src="../assets/UFLA/UFLA5.png">
+				<img class="UFLA" src="../assets/UFLA/UFLA6.png">
+				<img class="UFLA" src="../assets/UFLA/UFLA7.png">
+				<img class="UFLA" src="../assets/UFLA/UFLA4.png">
+
+
+				<button class="slidebutton" onclick="plusDivs(+1)">&#10095;</button>
 			</div>
 		</div>
 
@@ -33,8 +107,13 @@
 				<p>Artisan handiwork meets industrial strength with White Bark Workwear&#39;s new line of aprons. Made in Los Angeles from sustainably sourced, biodegradable materials, White Bark&#39;s durable workwear keeps both the health of the worker, and the environment in mind, without compromising strength.</p>
 				<p>The following examples are company and product descriptions written for their <a href="http://www.whitebarkworkwear.com/">website</a>.</p>
 			</div>
-			<div class="meat brdr">
-				<p> meat </p>
+			<div class="meat">
+				<button class="slidebutton" onclick="pluDiv(-1)">&#10094;</button>
+
+				<img class="WBWW" src="../assets/WBWW/WB1.png">
+				<img class="WBWW" src="../assets/WBWW/WB2.png">
+
+				<button class="slidebutton" onclick="pluDiv(+1)">&#10095;</button>
 			</div>
 		</div>
 

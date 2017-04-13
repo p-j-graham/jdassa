@@ -2,17 +2,46 @@
 <head>
 	<title>Josh Dassa | What's goin' on up there</title>
 	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/base.css">
+	<link rel="stylesheet" href="../stylesheets/basetest.css">
 </head>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 
 <body>
 
 	<div class="wrapper">
 
-		<div class="top rw">
-			<div class="pgname">
-				<h1>About Me</h1>
-				<p><a href="../index.html">back</a></p>
+	<div class="header">
+			<h1>About Me</h1>
+			<div class="dropdown">
+  				<button onclick="myFunction()" class="dropbtn">menu</button>
+  				<div id="myDropdown" class="dropdown-content">
+   					<a href="../index.html">home</a>
+    				<a href="belt.html">copy</a>
+    				<a href="hand.html">writing</a>
+    				<a href="about.html">about</a>
+  				</div>
 			</div>
 		</div>
 
@@ -31,7 +60,7 @@
 				<p>Portland, Oregon &amp; Los Angeles, California</p>
 				<h3>Rejected Onion Article Proposals</h3>
 				<p> 1. &#39;Sure, I&#39;m prepared in the case of an emergency,&#39; sighs crusty-eyed traveling man.</p>
-				<p>&#45;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Around 5:57AM, exhausted area man, Kent Jeremy, 56, muttered a few &#39;white lies&#39; to the Spirit Air counter attendant before &#39;scoring the best seat in the house, baby!&quot; Other nearby emergency exit row candidates shook their heads in disbelief&#46;&#46;&#46;</p>
+				<p>&#45;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Around 5:57AM, exhausted area man, Kent Jeremy, 56, muttered a few &#39;white lies&#39; to the Spirit Air counter attendant before &quot;scoring the best seat in the house, baby!&quot; Other nearby emergency exit row candidates shook their heads in disbelief&#46;&#46;&#46;</p>
 				<p> 2. Mediocre high school runner unearths new athletic potential at liberal arts college</p>
 				<p>&#45;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blazing through his third consecutive, nine and a half minute mile, freshman distance runner, Tony Rickson flashed a confident grin at his coach before whispering something about &quot;finally getting his due respect on the track&#46;&#46;&#46;&quot;</p>
 			</div>
