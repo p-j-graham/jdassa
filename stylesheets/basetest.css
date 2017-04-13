@@ -153,3 +153,30 @@ h1 {
 .bigtext p, h3 {
     text-align: left;
 }
+
+
+/*** not sure ***/ 
+
+.notsure {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.notsure h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.digdog {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.digdog h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
