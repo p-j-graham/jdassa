@@ -28,6 +28,18 @@
     text-align: center;
 }
 
+.home {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 550px;
+}
+
+.brdr {
+    border: 2px solid black;
+}
+
+
 /*** drop shit ***/
 
 .dropbtn {
@@ -73,22 +85,31 @@ h1 {
 }
 
 .header {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 25px;
     height: 100px;  
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     z-index: 1;
-    border: 2px solid black;
 }
 
+.header a {
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 90px;
+}
+
+.header a:hover {
+    color: #808080;
+}
 
 
 /*** body ***/ 
 
 .content {
-    margin-top: 25px;
+    margin-top: 0px;
     margin-left: 5%;
     margin-right: 5%;
     height: 425px;
@@ -97,7 +118,6 @@ h1 {
 .title {
     width: 25%;
     margin-right: 2.5%;
-    margin-top: 40px;
     height: 400px;
 }
 
@@ -114,13 +134,18 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 72.5%;
-    justify-content: space-between;
-    height: 400px;
+    justify-content: flex-start;
+    height: 420px;
+    flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 .UFLA, .WBWW {
     
+    height: 150px;
+    width: 150px;
     overflow: auto;
+    margin-right: 15px;
 }
 
 
@@ -128,7 +153,7 @@ h1 {
 
 .about {
     width: 90%;
-    height: 500px;
+    height: 550px;
     margin-left: 5%;
     margin-top: 25px;
 }
@@ -145,7 +170,7 @@ h1 {
 
 .bigtext {
     width: 62.5%;
-    height: 475px;
+    height: 550px;
     overflow: auto;
     margin-left: 2.5%;
 }
@@ -155,28 +180,83 @@ h1 {
 }
 
 
-/*** not sure ***/ 
+
+/*** writing ***/ 
+
+.section {
+    width: 30%;
+    margin-left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.sectit a {
+    text-decoration: none;
+    color: black;
+}
+
+.sectit a:hover {
+    color: #808080;
+}
+
+.sectit p {
+    text-align: center;
+}
+
+.writing {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cont:hover {
+    opacity: 0.6;
+}
+
+.image {
+    height: 240px;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 2.5%;
+    overflow: none;
+}
+
+.secimg {
+    height: 100%;
+    width: 100%;
+}
+
+.blurb {
+    height: 150px;
+    width: 95%;
+}
+
+/*** not sure + dig dog ***/ 
 
 .notsure {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .notsure h2 {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
 .digdog {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .digdog h2 {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }

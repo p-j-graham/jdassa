@@ -2,67 +2,7 @@
 <head>
 	<title>Josh Dassa | Under my Belt</title>
 	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/basetest.css">
-
-	<script>
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("UFLA");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}
-
-var slideIndex = 1;
-shoDiv(slideIndex);
-
-function pluDiv(n) {
-    shoDiv(slideIndex += n);
-}
-
-function shoDiv(n) {
-    var i;
-    var x = document.getElementsByClassName("WBWW");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-}
-
-	</script>
-
+	<link rel="stylesheet" href="../stylesheets/basetest.css">	
 </head>
 
 <body>
@@ -70,16 +10,10 @@ function shoDiv(n) {
 	<div class="bwrapper cl">
 
 		<div class="header">
-			<h1>Josh Dassa | Copy</h1>
-			<div class="dropdown">
-  				<button onclick="myFunction()" class="dropbtn">menu</button>
-  				<div id="myDropdown" class="dropdown-content">
-   					<a href="../index.html">home</a>
-    				<a href="belt.html">copy</a>
-    				<a href="hand.html">writing</a>
-    				<a href="about.html">about</a>
-  				</div>
-			</div>
+			<h1><a href="../index.html">Josh Dassa</a></h1>
+    		<a href="belt.html">copy</a>
+    		<a href="hand.html">writing</a>
+    		<a href="about.html">about</a>
 		</div>
 
 		<div class="content rw">
@@ -89,15 +23,27 @@ function shoDiv(n) {
 				<p>Here are a few samples of the copy I wrote for the launch of their new <a href="http://www.urbanfarmsla.com/">website</a>, as well as promotional fliers.
 			</div>
 			<div class="meat">
-				<button class="slidebutton" onclick="plusDivs(-1)">&#10094;</button>
-
+			<a target="_blank" href="../assets/UFLA/UFLA1.png">
+				<img class="UFLA" src="../assets/UFLA/UFLA1.png">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA2.jpg">
+				<img class="UFLA" src="../assets/UFLA/UFLA2.jpg">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA3.jpeg">
+				<img class="UFLA" src="../assets/UFLA/UFLA3.jpeg">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA5.png">
 				<img class="UFLA" src="../assets/UFLA/UFLA5.png">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA6.png">
 				<img class="UFLA" src="../assets/UFLA/UFLA6.png">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA7.png">
 				<img class="UFLA" src="../assets/UFLA/UFLA7.png">
+			</a>
+			<a target="_blank" href="../assets/UFLA/UFLA4.png">
 				<img class="UFLA" src="../assets/UFLA/UFLA4.png">
-
-
-				<button class="slidebutton" onclick="plusDivs(+1)">&#10095;</button>
+			</a>
 			</div>
 		</div>
 
@@ -108,12 +54,18 @@ function shoDiv(n) {
 				<p>The following examples are company and product descriptions written for their <a href="http://www.whitebarkworkwear.com/">website</a>.</p>
 			</div>
 			<div class="meat">
-				<button class="slidebutton" onclick="pluDiv(-1)">&#10094;</button>
-
+			<a target="_blank" href="../assets/WBWW/WB1.png">
 				<img class="WBWW" src="../assets/WBWW/WB1.png">
+			</a>
+			<a target="_blank" href="../assets/WBWW/WB2.png">
 				<img class="WBWW" src="../assets/WBWW/WB2.png">
-
-				<button class="slidebutton" onclick="pluDiv(+1)">&#10095;</button>
+			</a>
+			<a target="_blank" href="../assets/WBWW/WB3.png">
+				<img class="WBWW" src="../assets/WBWW/WB3.png">
+			</a>
+			<a target="_blank" href="../assets/WBWW/WB4.png">
+				<img class="WBWW" src="../assets/WBWW/WB4.png">
+			</a>
 			</div>
 		</div>
 

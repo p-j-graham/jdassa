@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <head>
-	<title>Josh Dassa | Handiwork</title>
-	<link rel="stylesheet" href="../stylesheets/normalize.css">
-	<link rel="stylesheet" href="../stylesheets/basetest.css">
+  <title>Josh Dassa | Handiwork</title>
+  <link rel="stylesheet" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" href="../stylesheets/basetest.css">
 </head>
-
-<script>
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-</script>
 
 <body>
 
-	<div class="wrapper">
+  <div class="wrapper">
 
-		<div class="header">
-			<h1>Josh Dassa | Writing</h1>
-			<div class="dropdown">
-  				<button onclick="myFunction()" class="dropbtn">menu</button>
-  				<div id="myDropdown" class="dropdown-content">
-   					<a href="../index.html">home</a>
-    				<a href="belt.html">copy</a>
-    				<a href="hand.html">writing</a>
-    				<a href="about.html">about</a>
-  				</div>
-			</div>
-		</div>
+    <div class="header">
+      <h1><a href="../index.html">Josh Dassa</a></h1>
+        <a href="belt.html">copy</a>
+        <a href="hand.html">writing</a>
+        <a href="about.html">about</a>
+    </div>
 
-		<div class="content cent">
-			<p><a href="notsure.html">Not Sure, Yet</a></p>
-			<p><a href="digitaldog.html">Digital Dog</a></p> 
-		</div>
+    <div class="writing">
 
-	</div>
+      <div class="section ">
+        <div class="image">
+          <a href="notsure.html"><img class="secimg" src="../assets/notsure.png" alt="notsure"></a>
+        </div>
+        <div class="sectit">
+          <p><a href="notsure.html">Not Sure, Yet</a><p>
+        </div>
+      </div>
+
+      <div class="section ">
+        <div class="image">
+          <a href="digitaldog.html"><img class="secimg" src="../assets/digdog.jpg" alt="digdog"></a>
+        </div>
+        <div class="sectit">
+          <p><a href="digitaldog.html">Digital Dog</a></p> 
+        </div>
+      </div>
+
+  </div>
 
 </body>
