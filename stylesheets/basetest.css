@@ -1,5 +1,9 @@
 /*** general ***/
 
+h1, h2, h3, p, a {
+    font-family: 'Josefin Slab', serif;
+}
+
 .content::-webkit-scrollbar { 
     display: none; 
 }
