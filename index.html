@@ -6,29 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 </head>
 
-<script>
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-</script>
-
 <body>
 	<div class="wrapper">
 	
@@ -39,7 +16,7 @@ window.onclick = function(event) {
     		<a href="pages/about.html">about</a>
 		</div>
 
-		<div class="home rw">
+		<div class="home">
 			<img id="homeimg" src="assets/homeimg.jpg">
 		</div>
 
